@@ -7,7 +7,11 @@ class QuadraticForumla {
     System.out.println("Please enter your coefficient for a");
     String input = sc.nextLine();
     double a = Integer.parseInt(input);
-    
+    if (a == 0){
+    	System.out.println("Undefined");
+	
+    } else {
+	  
     System.out.println("Please enter your coefficient for b");
     input = sc.nextLine();
     double b = Integer.parseInt(input);
@@ -21,6 +25,7 @@ class QuadraticForumla {
     x2 =(-b - Math.sqrt((b*b) - 4*a*c))/(2*a);
     
     System.out.println("The roots are x1: " + x1 + " and x2: " + x2);
+    }
   }
 }
 
