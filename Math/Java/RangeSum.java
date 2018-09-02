@@ -1,7 +1,7 @@
 // Imports Scanner Class
 import java.util.Scanner;
 
-class FirstIntSecondInt {
+class RangeSum {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);  
     
