@@ -1,0 +1,7 @@
+Have the following modules installed:
+Math
+SYS
+
+Additionally have:
+Pip
+Python 3
