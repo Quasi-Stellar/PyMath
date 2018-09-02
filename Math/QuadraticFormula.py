@@ -1,5 +1,5 @@
 # Required for math.sqrt
-import math
+from math import sqrt
 # Required to end program if error occurs
 import sys
 
@@ -11,8 +11,8 @@ b = float(input('Please enter a number to represent b: '))
 c = float(input('Please enter a number to represent c: '))
 
 # Formula to calculate roots
-x1 = (-b + math.sqrt((b**2) - 4*a*c))/(2*a)
-x2 = (-b - math.sqrt((b**2) - 4*a*c))/(2*a)
+x1 = (-b + sqrt((b**2) - 4*a*c))/(2*a)
+x2 = (-b - sqrt((b**2) - 4*a*c))/(2*a)
 
 # Prints out values
 print('The Quadratic Roots are: ', x1,  ' and ', x2)
