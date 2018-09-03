@@ -22,5 +22,5 @@ b = float(input('Enter the value of b: '))
 c = float(input('Enter the value of c: '))
 
 # Calls function
-quadratic = quadratic(a,b,c)
-print(quadratic)
+quadratic_print = quadratic(a,b,c)
+print(quadratic_print)
