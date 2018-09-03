@@ -26,4 +26,4 @@ try:
     root = quadratic(a,b,c)
     print(root)
 except:
-    print("Invalid Value")
+    print("Invalid Value(s).")
