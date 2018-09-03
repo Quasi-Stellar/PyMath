@@ -14,7 +14,6 @@ def quadratic(a,b,c):
     x2 = (-b - sqrt((b**2) - 4*a*c))/(2*a)
     return(f'The roots are {x1} and {x2}')
 
-try:
     # Gets values for a,b,c
     a = float(input('Enter the value of a: '))
     if a == 0:
@@ -24,6 +23,7 @@ try:
 
     # Calls function
     root = quadratic(a,b,c)
-    print(root)
-except:
-    print("Invalid Value(s).")
+    if b**2 - 4ac >= 0:
+        print(root)
+    else:
+        print('Invalid values')
