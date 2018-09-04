@@ -14,16 +14,16 @@ def quadratic(a,b,c):
     x2 = (-b - sqrt((b**2) - 4*a*c))/(2*a)
     return(f'The roots are {x1} and {x2}')
 
-    # Gets values for a,b,c
-    a = float(input('Enter the value of a: '))
-    if a == 0:
-        exit('Undefined.')
-    b = float(input('Enter the value of b: '))
-    c = float(input('Enter the value of c: '))
+# Gets values for a,b,c
+a = float(input('Enter the value of a: '))
+if a == 0:
+    exit('Undefined.')
+b = float(input('Enter the value of b: '))
+c = float(input('Enter the value of c: '))
 
-    # Calls function
+# Calls function
+if b**2 - 4*a*c < 0:
+    print('Invalid values')
+else:
     root = quadratic(a,b,c)
-    if b**2 - 4ac >= 0:
-        print(root)
-    else:
-        print('Invalid values')
+    print(root)
